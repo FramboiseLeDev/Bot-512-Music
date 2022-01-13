@@ -79,7 +79,7 @@ exports.run = async (client, message, args) => {
         .addField("Nom de la musique", song.name, false)
         .addField("Vues", song.views, false)
         .addField("Durée", song.duration, false)
-        .addField("Demander par", song.requested.tag, false)
+        .addField("Demandé par", song.requested.tag, false)
         .setFooter("Positionner " + list.queue.length + " In the queue")
     );
   }
@@ -142,7 +142,7 @@ exports.run = async (client, message, args) => {
           .addField("Titre de la musique", track.name, false)
           .addField("Vues", track.views, false)
           .addField("Durée", track.duration, false)
-          .addField("Demander par", track.requested, false)
+          .addField("Demandé par", track.requested, false)
           .setFooter("Kaori utilise youtube")
       );
     } catch (e) {
